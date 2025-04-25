@@ -21,6 +21,7 @@ deps = [sdl2_dep, imgui_dep, nlohmann_json_dep]
 if host_machine.system() == 'windows'
   sdl2main_dep = sdl2_proj.get_variable('sdl2main_dep')
   deps += sdl2main_dep
+  add_project_link_arguments('-static', language: 'cpp')
 endif
 
 link_args = []
