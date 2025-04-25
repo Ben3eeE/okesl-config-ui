@@ -29,7 +29,7 @@ jobs:
     - name: Meson WrapDB
       run: meson wrap update-db
     - name: Configure Project
-      run: meson setup builddir/
+      run: meson setup builddir/ -Dbuildtype=release
     - name: Build meson
       run: ninja -C builddir/ -v
 
