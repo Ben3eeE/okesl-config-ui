@@ -1,10 +1,12 @@
 project('okesl-config-ui', 'cpp', version: '1.0.0', default_options: ['c_std=c++11'])
 
 src = files(
-  'imgui.cpp'
+  'src/main.cpp',
+  'src/CvarManager.cpp',
+  'src/ControlsManager.cpp'
 )
 
-inc = include_directories('include')
+inc = include_directories('src', 'include')
 
 cxx = meson.get_compiler('cpp')
 sdl2_proj = subproject('sdl2')

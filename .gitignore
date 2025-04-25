@@ -2,3 +2,6 @@ builddir/
 subprojects/*
 !subprojects/*.wrap
 !subprojects/packagefiles/*
+resources/imgui.ini
+resources/cfg/cvars.cfg
+resources/cfg/controls.cfg
