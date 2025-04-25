@@ -1,0 +1,49 @@
+name: Windows Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Python (required for Meson)
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: |
+        choco install ninja meson -y
+        choco install sdl2 -y
+        choco install cmake -y
+        choco install mingw -y
+
+    # Step 4: Configure the build with Meson
+    - name: Configure build
+      run: |
+        meson setup builddir --buildtype=release
+
+    # Step 5: Build the project
+    - name: Build project
+      run: |
+        meson compile -C builddir
+
+    # Step 6: Upload build artifacts
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: okesl-config-ui-build
+        path: builddir/
