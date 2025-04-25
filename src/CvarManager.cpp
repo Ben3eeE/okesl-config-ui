@@ -128,7 +128,6 @@ void saveCvarsToFile(const std::string& filename) {
     std::cout << "Configuration saved to " << filename << std::endl;
 }
 
-
 // Function to render the cvars GUI
 void renderCvars() {
     // Create a vector of cvars sorted by type
@@ -136,8 +135,10 @@ void renderCvars() {
     for (auto& [key, cvar] : cvars) {
         sortedCvars.emplace_back(key, &cvar);
     }
-    std::sort(sortedCvars.begin(), sortedCvars.end(), [](const auto& a, const auto& b) {
-        return a.second->type < b.second->type; // Sort by type
+
+    // Sort the cvars by type (alphabetically)
+    std::sort(sortedCvars.begin(), sortedCvars.end(), [](const std::pair<std::string, Cvar*>& a, const std::pair<std::string, Cvar*>& b) {
+        return a.second->type < b.second->type; // Compare the type strings
     });
 
     // Render the sorted cvars
