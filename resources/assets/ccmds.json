@@ -1,0 +1,274 @@
+[
+  {
+    "name": "exec",
+    "description": "Load <file> and execute all commands"
+  },
+  {
+    "name": "print",
+    "description": "Echo <arg>"
+  },
+  {
+    "name": "toggle",
+    "description": "Toggle a cvar"
+  },
+  {
+    "name": "default",
+    "description": "Set a cvar to default value"
+  },
+  {
+    "name": "bind",
+    "description": "Bind a key"
+  },
+  {
+    "name": "unbind",
+    "description": "Unbind a key"
+  },
+  {
+    "name": "unbindall",
+    "description": "Unbind all keys"
+  },
+  {
+    "name": "alias",
+    "description": "Alias a key"
+  },
+  {
+    "name": "unalias",
+    "description": "Unalias a key"
+  },
+  {
+    "name": "mod",
+    "description": "Register modifiers a and b"
+  },
+  {
+    "name": "inc",
+    "description": "Increment a cvar"
+  },
+  {
+    "name": "print_cvars",
+    "description": "Print all cvars"
+  },
+  {
+    "name": "print_cmds",
+    "description": "Print all commands"
+  },
+  {
+    "name": "export_cvars",
+    "description": "Export all cvars to JSON"
+  },
+  {
+    "name": "export_ccmds",
+    "description": "Export all commands to JSON"
+  },
+  {
+    "name": "exit",
+    "description": "Exit okesl"
+  },
+  {
+    "name": "console",
+    "description": "Toggle the console"
+  },
+  {
+    "name": "history",
+    "description": "Show console history"
+  },
+  {
+    "name": "lev",
+    "description": "Load a level"
+  },
+  {
+    "name": "int",
+    "description": "Load an internal"
+  },
+  {
+    "name": "rec",
+    "description": "Load a replay"
+  },
+  {
+    "name": "dat",
+    "description": "Load a dat file"
+  },
+  {
+    "name": "bak",
+    "description": "Load a backup"
+  },
+  {
+    "name": "saverec",
+    "description": "Save a replay"
+  },
+  {
+    "name": "savedat",
+    "description": "Save a dat"
+  },
+  {
+    "name": "saveall",
+    "description": "Save both dat and replay"
+  },
+  {
+    "name": "baklist",
+    "description": "List all available backups"
+  },
+  {
+    "name": "reset",
+    "description": "Reset to start of current slot"
+  },
+  {
+    "name": "auto",
+    "description": "Turn autoplay on or off 0/1"
+  },
+  {
+    "name": "save",
+    "description": "Set savepoint in current slot"
+  },
+  {
+    "name": "load",
+    "description": "Load savepoint in current slot"
+  },
+  {
+    "name": "step",
+    "description": "Step one frame 0 for back 1 for forward"
+  },
+  {
+    "name": "jmp",
+    "description": "Jump <time> seconds"
+  },
+  {
+    "name": "jmpend",
+    "description": "Jump to end"
+  },
+  {
+    "name": "jmpdiff",
+    "description": "Jump to difference between two slots"
+  },
+  {
+    "name": "rewind",
+    "description": "Go backwards"
+  },
+  {
+    "name": "offset",
+    "description": "Set slot offset"
+  },
+  {
+    "name": "incoffset",
+    "description": "Increase slot offset"
+  },
+  {
+    "name": "decoffset",
+    "description": "Decrease slot offset"
+  },
+  {
+    "name": "clearoffsets",
+    "description": "Clear all slot offsets"
+  },
+  {
+    "name": "slotcomment",
+    "description": "Change comment of current slot"
+  },
+  {
+    "name": "resetdata",
+    "description": "Reset physics info (speed, dist, etc)"
+  },
+  {
+    "name": "slot",
+    "description": "Change slot, argument for index"
+  },
+  {
+    "name": "slotdraw",
+    "description": "Toggle drawing of ghost bike in slot"
+  },
+  {
+    "name": "slotcopy",
+    "description": "Copy slot"
+  },
+  {
+    "name": "hold",
+    "description": "Used with pause so you can hold button and keep pausing"
+  },
+  {
+    "name": "ignorepause",
+    "description": "Ignore pause but resets osv"
+  },
+  {
+    "name": "zoomin",
+    "description": "Zoom in"
+  },
+  {
+    "name": "zoomout",
+    "description": "Zoom out"
+  },
+  {
+    "name": "spy_up",
+    "description": "Move up in spy mode"
+  },
+  {
+    "name": "spy_down",
+    "description": "Move down in spy mode"
+  },
+  {
+    "name": "spy_left",
+    "description": "Move left in spy mode"
+  },
+  {
+    "name": "spy_right",
+    "description": "Move right in spy mode"
+  },
+  {
+    "name": "hud_clear",
+    "description": "Remove all hud elements"
+  },
+  {
+    "name": "hud_add",
+    "description": "Add hud element"
+  },
+  {
+    "name": "hud_float",
+    "description": "Put hud element in corner t,b,l,r. Use tl for top first then left"
+  },
+  {
+    "name": "hud_size",
+    "description": "Size of hud element"
+  },
+  {
+    "name": "hud_autosize",
+    "description": "Autosize to max available size"
+  },
+  {
+    "name": "hud_enabled",
+    "description": "Enable or disable hud element (Gives space to other elements)"
+  },
+  {
+    "name": "hud_visible",
+    "description": "Enable of disable hud element visibility"
+  },
+  {
+    "name": "hud_format",
+    "description": "Foramt string for slots and data boxes"
+  },
+  {
+    "name": "throttle",
+    "description": "Gas button"
+  },
+  {
+    "name": "brake",
+    "description": "Brake button"
+  },
+  {
+    "name": "ofbrake",
+    "description": "One frame brake button"
+  },
+  {
+    "name": "left",
+    "description": "Left volt"
+  },
+  {
+    "name": "right",
+    "description": "Right volt"
+  },
+  {
+    "name": "turn",
+    "description": "Change direction"
+  },
+  {
+    "name": "levtitle",
+    "description": "Title of current level"
+  }
+]

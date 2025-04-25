@@ -1,0 +1,392 @@
+{
+  "width": {
+    "type": "int",
+    "default": 800,
+    "min": 320,
+    "max": 100000
+  },
+  "height": {
+    "type": "int",
+    "default": 600,
+    "min": 240,
+    "max": 100000
+  },
+  "fullscreen": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "borderless": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "fullscreen_desk": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "showcursor": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "vsync": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "hzlimit": {
+    "type": "float",
+    "default": 1000.0,
+    "min": 1.0,
+    "max": 100000.0
+  },
+  "hzlimit_on": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "drawpframes": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "drawapples": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "drawkillers": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "drawflowers": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "drawgravarrows": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "defground": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "defsky": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "solidground": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "solidsky": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "fixskypcx": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "pause": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "speed": {
+    "type": "float",
+    "default": 1.0,
+    "min": 0.0,
+    "max": 100.0
+  },
+  "speedmod": {
+    "type": "float",
+    "default": 1.0,
+    "min": 0.0,
+    "max": 100.0
+  },
+  "fps": {
+    "type": "float",
+    "default": 1000.0,
+    "min": 0.0,
+    "max": 2000.0
+  },
+  "fpsnoise": {
+    "type": "float",
+    "default": 0.7,
+    "min": 0.0,
+    "max": 5.0
+  },
+  "fpsnoise_on": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "spy": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "spynoinput": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "zoom": {
+    "type": "float",
+    "default": 1.0,
+    "min": 0.0,
+    "max": 1000.0
+  },
+  "centercam": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "rotatecam": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "camorientation": {
+    "type": "int",
+    "default": 1,
+    "min": 0,
+    "max": 3
+  },
+  "instantturn": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "animobjects": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "navzoom": {
+    "type": "float",
+    "default": 0.1,
+    "min": 0.0,
+    "max": 1000.0
+  },
+  "navscaleobj": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "consolepause": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "printkeys": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "slotcount": {
+    "type": "int",
+    "default": 4,
+    "min": 1,
+    "max": 32
+  },
+  "bakinterval": {
+    "type": "int",
+    "default": 1,
+    "min": 0,
+    "max": 6000
+  },
+  "overwrites": {
+    "type": "int",
+    "default": 16,
+    "min": 1,
+    "max": 1000
+  },
+  "storeddata": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "swap_bike": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "shirt": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "col_kuski": {
+    "type": "color",
+    "default": "#FFFFFFFF"
+  },
+  "col_ghost": {
+    "type": "color",
+    "default": "#000020"
+  },
+  "col_lastghost": {
+    "type": "color",
+    "default": "#000000"
+  },
+  "col_ground": {
+    "type": "color",
+    "default": "#FFFFFFFF"
+  },
+  "col_sky": {
+    "type": "color",
+    "default": "#FFFFFFFF"
+  },
+  "col_objects": {
+    "type": "color",
+    "default": "#FFFFFFFF"
+  },
+  "col_gravarrows": {
+    "type": "color",
+    "default": "#FFFF00FF"
+  },
+  "hud_draw": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "hud_scale": {
+    "type": "int",
+    "default": 1,
+    "min": 1,
+    "max": 64
+  },
+  "hud_padding": {
+    "type": "int",
+    "default": 4,
+    "min": 0,
+    "max": 100
+  },
+  "hud_margin": {
+    "type": "int",
+    "default": 4,
+    "min": 0,
+    "max": 100
+  },
+  "hud_slotspacing": {
+    "type": "int",
+    "default": 2,
+    "min": 0,
+    "max": 20
+  },
+  "hud_mstimer": {
+    "type": "bool",
+    "default": true,
+    "min": false,
+    "max": false
+  },
+  "hud_activeonly": {
+    "type": "bool",
+    "default": false,
+    "min": false,
+    "max": false
+  },
+  "hud_condelay": {
+    "type": "float",
+    "default": 5.0,
+    "min": -10.0,
+    "max": 1000.0
+  },
+  "hud_col_bg": {
+    "type": "color",
+    "default": "#000033"
+  },
+  "hud_col_text": {
+    "type": "color",
+    "default": "#F2F2F2FF"
+  },
+  "hud_col_active": {
+    "type": "color",
+    "default": "#FFFF00FF"
+  },
+  "hud_col_actbg": {
+    "type": "color",
+    "default": "#68680060"
+  },
+  "hud_col_warn": {
+    "type": "color",
+    "default": "#FF0000FF"
+  },
+  "hud_col_warnbg": {
+    "type": "color",
+    "default": "#AA000060"
+  },
+  "hud_col_header": {
+    "type": "color",
+    "default": "#B2B2B2FF"
+  },
+  "hud_col_error": {
+    "type": "color",
+    "default": "#FF0000FF"
+  },
+  "hud_col_ground": {
+    "type": "color",
+    "default": "#F2F2F280"
+  },
+  "hud_col_sky": {
+    "type": "color",
+    "default": "#000033"
+  },
+  "hud_col_kuski": {
+    "type": "color",
+    "default": "#FFFF00FF"
+  },
+  "hud_col_apple": {
+    "type": "color",
+    "default": "#FF0000FF"
+  },
+  "hud_col_flower": {
+    "type": "color",
+    "default": "#FFFFFFFF"
+  },
+  "hud_col_killer": {
+    "type": "color",
+    "default": "#EE00FF"
+  }
+}
