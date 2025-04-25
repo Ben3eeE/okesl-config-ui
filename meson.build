@@ -9,9 +9,9 @@ src = files(
 inc = include_directories('src', 'include')
 
 cxx = meson.get_compiler('cpp')
-sdl2_proj = subproject('sdl2')
+sdl2_proj = subproject('sdl2', default_options: ['default_library=static'])
 sdl2_dep = sdl2_proj.get_variable('sdl2_dep')
-imgui_proj = subproject('imgui')
+imgui_proj = subproject('imgui', default_options: ['default_library=static'])
 imgui_dep = imgui_proj.get_variable('imgui_dep')
 nlohmann_json_proj = subproject('nlohmann_json')
 nlohmann_json_dep = nlohmann_json_proj.get_variable('nlohmann_json_dep')
