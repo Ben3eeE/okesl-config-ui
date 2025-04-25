@@ -19,9 +19,6 @@ nlohmann_json_dep = nlohmann_json_proj.get_variable('nlohmann_json_dep')
 deps = [sdl2_dep, imgui_dep, nlohmann_json_dep]
 
 link_args = []
-if build_machine.system() == 'windows'
-    link_args = ['/ENTRY:mainCRTStartup']
-endif
 
 executable(
     'okesl-config-ui',
