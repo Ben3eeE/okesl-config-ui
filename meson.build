@@ -18,7 +18,15 @@ nlohmann_json_dep = nlohmann_json_proj.get_variable('nlohmann_json_dep')
 
 deps = [sdl2_dep, imgui_dep, nlohmann_json_dep]
 
+if host_machine.system() == 'windows'
+    sdl2main_dep = sdl2_proj.get_variable('sdl2main_dep', fallback: '')
+    if sdl2main_dep != ''
+        deps += sdl2main_dep
+    endif
+endif
+
 link_args = []
+
 
 executable(
     'okesl-config-ui',
