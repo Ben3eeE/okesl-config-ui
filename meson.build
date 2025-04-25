@@ -1,4 +1,4 @@
-project('okesl-config-ui', 'cpp', version: '1.0.0', default_options: ['c_std=c++11'])
+project('okesl-config-ui', 'cpp', version: '1.0.0', default_options: ['cpp_std=c++11'])
 
 src = files(
   'src/main.cpp',
