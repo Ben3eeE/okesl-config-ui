@@ -1,4 +1,4 @@
-name: Windows Build
+name: Windows Build with ccache
 
 on:
   push:
@@ -26,14 +26,24 @@ jobs:
     # Step 3: Install dependencies
     - name: Install dependencies
       run: python -m pip install meson==1.5.0 ninja
-    - name: Meson WrapDB
-      run: meson wrap update-db
-    - name: Configure Project
-      run: meson setup builddir/ -Dbuildtype=release -Dstrip=true -Ddebug=false
-    - name: Build meson
-      run: ninja -C builddir/ -v
 
-    # Step 6: Upload build artifacts
+    # Step 4: Set up ccache
+    - name: Set up ccache
+      uses: hendrikmuhs/ccache-action@v1.2
+      with:
+        cache-key: ${{ runner.os }}-ccache
+        cache-dependency-path: builddir/meson-private/coredata.dat
+
+    # Step 5: Configure Project
+    - name: Configure Project
+      run: |
+        meson setup builddir/ -Dbuildtype=release -Dstrip=true -Ddebug=false
+
+    # Step 6: Build Project
+    - name: Build Project
+      run: meson compile -C builddir
+
+    # Step 7: Upload build artifacts
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
