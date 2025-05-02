@@ -37,17 +37,17 @@ jobs:
         save: true
         max-size: 5G
 
-    # Step 5: Configure Project
-    - name: Configure Project
-      run: |
-        meson setup builddir/ -Dbuildtype=release -Dstrip=true
-
-    # Step 5.5
+    # Step 4.5
     - name: Cache Meson packagecache
       uses: actions/cache@v4
       with:
         path: subprojects/packagecache
         key: ${{ runner.os }}-${{ hashFiles('subprojects/*.wrap') }}
+
+    # Step 5: Configure Project
+    - name: Configure Project
+      run: |
+        meson setup builddir/ -Dbuildtype=release -Dstrip=true
 
     # Step 6: Build Project
     - name: Build Project
