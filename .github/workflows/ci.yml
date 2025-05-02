@@ -42,6 +42,13 @@ jobs:
       run: |
         meson setup builddir/ -Dbuildtype=release -Dstrip=true
 
+    # Step 5.5
+    - name: Cache Meson packagecache
+      uses: actions/cache@v4
+      with:
+        path: subprojects/packagecache
+        key: ${{ runner.os }}-${{ hashFiles('subprojects/*.wrap') }}
+
     # Step 6: Build Project
     - name: Build Project
       run: meson compile -C builddir
