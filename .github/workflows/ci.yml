@@ -37,6 +37,13 @@ jobs:
         save: true
         max-size: 5G
 
+    # Step 4.5
+    - name: Cache Meson packagecache
+      uses: actions/cache@v4
+      with:
+        path: subprojects/packagecache
+        key: ${{ runner.os }}-${{ hashFiles('subprojects/*.wrap') }}
+
     # Step 5: Configure Project
     - name: Configure Project
       run: |
