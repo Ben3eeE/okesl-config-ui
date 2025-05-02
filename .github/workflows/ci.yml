@@ -31,8 +31,11 @@ jobs:
     - name: Set up ccache
       uses: hendrikmuhs/ccache-action@v1.2
       with:
-        cache-key: ${{ runner.os }}-ccache
-        cache-dependency-path: builddir/meson-private/coredata.dat
+        key: ${{ runner.os }}-ccache
+        restore-keys: |
+          ${{ runner.os }}-ccache
+        save: true
+        max-size: 5G
 
     # Step 5: Configure Project
     - name: Configure Project
